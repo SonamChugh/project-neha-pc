@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_5478" data-name="Group 5478" transform="translate(-19.341 -738)">
+    <rect id="Rectangle_1482" data-name="Rectangle 1482" width="24" height="24" transform="translate(19.341 738)" fill="none"/>
+    <g id="phone-book_1_" data-name="phone-book (1)" transform="translate(8.341 741)">
+      <path id="Path_4601" data-name="Path 4601" d="M16.563,3.861H15.185V5.034h1.379V8.306H15V9.478h1.563V12.75H15v1.173h1.563v3.861H19.3V0H16.563Z" fill="#fdfefe"/>
+      <path id="Path_4602" data-name="Path 4602" d="M155,0V17.784h11.139V0Zm5.57,5.31a1.725,1.725,0,1,1-1.725,1.725A1.725,1.725,0,0,1,160.57,5.31Zm-3.127,7.163a3.127,3.127,0,1,1,6.254,0Z" transform="translate(-134.528)" fill="#fdfefe"/>
+    </g>
+  </g>
+</svg>

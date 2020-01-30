@@ -1,0 +1,4 @@
+<svg id="_add_circle" data-name=" add_circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Path" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  <path id="Icon" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM6,9a1,1,0,0,0,0,2H9v3a1,1,0,1,0,2,0V11h3a1,1,0,0,0,0-2H11V6A1,1,0,1,0,9,6V9Z" transform="translate(2 2)" fill="#fff"/>
+</svg>

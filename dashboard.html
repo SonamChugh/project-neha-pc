@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | Quboxe</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		.demo{margin:150px auto;width:980px;}
+		.demo h1{margin:0 0 25px;}
+		.demo h3{margin:10px 0;}
+		pre{background-color:#FFF;}
+		@media only screen and (max-width:780px){
+		.demo{margin:5%;width:90%;}
+		.how-use{display:none;float:left;width:300px;}
+	}
+	#tabInfo{display:none;}
+	</style>
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-fixed-top">
+			<!-- <div class="row"> -->
+				<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6 navbar-header">
+					<!-- <button type="button" class="navbar-toggle show-menu pull-right" data-toggle="collapse" data-target="#myNavbar"> -->
+						<!-- <span class="icon-bar"></span> -->
+						<!-- <span class="icon-bar"></span> -->
+						<!-- <span class="icon-bar"></span> -->
+					<!-- </button> -->
+					<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" width="149" height="35" class="img-responsive"/></a>
+				</div>
+				<div class="col-md-4 col-sm-2 col-xs-6">
+				<a href="#" class="show-menu">
+					<svg xmlns="http://www.w3.org/2000/svg" width="27.128" height="24.503" viewBox="0 0 27.128 24.503">
+					  <g id="menu-button-of-three-horizontal-lines" transform="translate(0 -6)">
+						<path id="Path_4609" data-name="Path 4609" d="M24.5,6H2.625a2.625,2.625,0,1,0,0,5.251H24.5A2.625,2.625,0,1,0,24.5,6Z" fill="#205081"/>
+						<path id="Path_4610" data-name="Path 4610" d="M24.5,50H2.625a2.625,2.625,0,1,0,0,5.251H24.5A2.625,2.625,0,1,0,24.5,50Z" transform="translate(0 -34.374)" fill="#205081"/>
+						<path id="Path_4611" data-name="Path 4611" d="M24.5,94H2.625a2.625,2.625,0,1,0,0,5.251H24.5A2.625,2.625,0,1,0,24.5,94Z" transform="translate(0 -68.748)" fill="#205081"/>
+					  </g>
+					</svg>
+				</a>
+			</div>
+				<div class="col-md-10 col-md-10 col-sm-8 col-xs-12">
+					<div class="row">
+						<div class="col-md-9 col-sm-7 col-xs-6">
+							<form action="#" class="search-box">
+								<div class="input-group">
+								  <div class="input-group-btn">
+									<button class="btn btn-default" type="submit">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+										  <path id="Search_Icon" data-name="Search Icon" d="M12.7,11.23a6.777,6.777,0,0,0,1.4-4.174A7.02,7.02,0,0,0,7.1,0,7.105,7.105,0,0,0,0,7.056a7.105,7.105,0,0,0,7.1,7.056,6.667,6.667,0,0,0,4.2-1.391l3,2.981a.971.971,0,0,0,1.4,0,.957.957,0,0,0,0-1.391Zm-5.6.8A5.022,5.022,0,0,1,2,7.056a5.1,5.1,0,0,1,10.2,0A5.022,5.022,0,0,1,7.1,12.025Z" fill="#bcbccb"/>
+										</svg>
+									</button>
+								  </div>
+								  <input type="text" class="form-control" placeholder="Search Name…" name="search">
+								</div>
+							  </form>
+						</div>
+						<div class="col-md-3 col-sm-5 col-xs-6">
+							<div class="profile">
+								<figure class="img-circle pull-right">
+									<img src="images/avatar.png" alt="img" width="38" height="38"  class="img-circle img-responsive"/>
+								</figure>
+								<select>
+									<option>John Doe</option>
+									<option>-</option>
+									<option>-</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</nav>
+	</header>
+	<section class="mid-sec">
+		<div class="container-fluid">
+			<div class="row sb-toggle">
+				<div class="col-md-2 col-sm-2 col-xs-4">
+					<aside>
+						<h3>Projects</h3>
+						<ul class="nav">
+							<li>
+								<a href="index.html"><object data="images/svg/sider-bar-icons/toc.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>All Projects</p></a>
+							</li>
+							<li>
+								<a href="my-created.html"><object data="images/svg/sider-bar-icons/my-created.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>My Created</p></a>
+							</li>
+							<li>
+								<a href="favorite-projects.html"><object data="images/svg/sider-bar-icons/favorites.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Favorites</p></a>
+							</li>
+							<li>
+								<a href="archived-projects.html"><object data="images/svg/sider-bar-icons/archived.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Archived</p></a>
+							</li>
+							<li>
+								<a href="import-study.html"><object data="images/svg/sider-bar-icons/import-study.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Import Study</p></a>
+							</li>
+						</ul>
+						<h3>SHARING</h3>
+						<ul class="nav">
+							<li>
+								<a href="create-new-user.html"><object data="images/svg/sider-bar-icons/create-user.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Create User</p></a>
+							</li>
+							<li>
+								<a href="view-users.html"><object data="images/svg/sider-bar-icons/view-users.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>View Users</p></a>
+							</li>
+							<li>
+								<a href="project-sharing.html"><object data="images/svg/sider-bar-icons/projects-sharing.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Projects Sharing</p></a>
+							</li>
+						</ul>
+						<h3>SETTINGS</h3>
+						<ul class="nav">
+							<li>
+								<a href="#"><object data="images/svg/sider-bar-icons/customize-theme.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Customize Theme</p></a>
+							</li>
+							<li>
+								<a href="translations.html"><object data="images/svg/sider-bar-icons/translations.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Translations</p></a>
+							</li>
+							<li>
+								<a href="#"><object data="images/svg/sider-bar-icons/calendar.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Calendar</p></a>
+							</li>
+							<li>
+								<a href="view-users-contact.html"><object data="images/svg/sider-bar-icons/contacts.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Contacts</p></a>
+							</li>
+						</ul>
+						<h3>PROJECT NEW SCHOOL TEST</h3>
+						<ul class="nav last-ul">
+							<li class="active">
+								<a href="dashboard.html"><object data="images/svg/dashboard-icon.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Dashboard</p></a>
+							</li>
+							<li>
+								<a href="#"><object data="images/svg/report-icon.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Report</p></a>
+							</li>
+							<li>
+								<a href="#"><object data="images/svg/network.svg" type="image/svg+xml" width="24" height="24" class="pull-left"></object>
+								<p>Network</p></a>
+							</li>
+						</ul>
+					
+					</aside>
+				</div>
+				<div class="col-md-10 col-sm-8 col-sm-offset-2 col-xs-12">
+						<div class="menu-display"><p>Dashboard Menu<span id="togglebut">+</span></p></div>
+						<div class="inner-tabing">
+						<ul class="nav nav-tabs">
+							<li>
+								<a data-toggle="tab" href="#study">Study
+									<figure><svg xmlns="http://www.w3.org/2000/svg" width="51.849" height="47.822" viewBox="0 0 51.849 47.822">
+									  <g id="book" transform="translate(0 -18.463)" >
+										<path id="Path_4614" data-name="Path 4614" d="M51.045,29.36a4.109,4.109,0,0,0-1.838-1.339,5.015,5.015,0,0,1-.155,1.775l-9.34,30.729a2.238,2.238,0,0,1-1.09,1.292,3.454,3.454,0,0,1-1.744.483H8.141q-3.736,0-4.483-2.179a1.419,1.419,0,0,1,.031-1.339,1.372,1.372,0,0,1,1.183-.468H31.928q2.9,0,4-1.074t2.226-4.779l8.531-28.208a4.44,4.44,0,0,0-.561-4.047,4.1,4.1,0,0,0-3.549-1.743H18.883a8.656,8.656,0,0,0-1.588.28l.031-.094a6.5,6.5,0,0,0-1.479-.171,2.081,2.081,0,0,0-1.121.359,3.6,3.6,0,0,0-.825.731,5.36,5.36,0,0,0-.607,1q-.3.608-.5,1.121t-.467,1.09a7.016,7.016,0,0,1-.514.949q-.187.249-.529.654t-.56.716a1.753,1.753,0,0,0-.28.561,2.028,2.028,0,0,0,.062.825,2.566,2.566,0,0,1,.093.794,11.805,11.805,0,0,1-.856,3A12.835,12.835,0,0,1,8.422,32.91q-.124.155-.685.7a2.491,2.491,0,0,0-.685.949q-.125.156-.016.872a4.5,4.5,0,0,1,.078,1,12.755,12.755,0,0,1-.779,2.8,19.047,19.047,0,0,1-1.308,2.864,5.1,5.1,0,0,1-.529.716,2.618,2.618,0,0,0-.529.871,2.744,2.744,0,0,0,.016.872,2.435,2.435,0,0,1-.016.934,16.9,16.9,0,0,1-.934,2.849,20.787,20.787,0,0,1-1.4,2.849,7.5,7.5,0,0,1-.513.732,7.6,7.6,0,0,0-.514.731,1.938,1.938,0,0,0-.249.654,1.547,1.547,0,0,0,.094.608,1.727,1.727,0,0,1,.093.67q-.031.435-.124,1.152t-.094.84A5.649,5.649,0,0,0,.39,60.526a8.748,8.748,0,0,0,3.1,4.094,7.62,7.62,0,0,0,4.624,1.665H36.848a6.215,6.215,0,0,0,3.814-1.354,6.425,6.425,0,0,0,2.381-3.347L51.6,33.376A4.4,4.4,0,0,0,51.045,29.36Zm-33.127.062.654-1.993a1.389,1.389,0,0,1,.514-.7,1.3,1.3,0,0,1,.794-.3H38.81a.679.679,0,0,1,.622.3.812.812,0,0,1,.063.7l-.655,1.993a1.391,1.391,0,0,1-.514.7,1.3,1.3,0,0,1-.794.3H18.6a.679.679,0,0,1-.623-.3A.812.812,0,0,1,17.918,29.422Zm-2.584,7.97.654-1.992a1.39,1.39,0,0,1,.514-.7,1.3,1.3,0,0,1,.794-.3H36.225a.678.678,0,0,1,.623.3.811.811,0,0,1,.062.7l-.654,1.992a1.388,1.388,0,0,1-.513.7,1.3,1.3,0,0,1-.794.3H16.019a.678.678,0,0,1-.622-.3A.81.81,0,0,1,15.334,37.392Z" transform="translate(0)"/>
+									  </g>
+										</svg>
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#reports">Reports
+									<figure><svg id="newspaper" xmlns="http://www.w3.org/2000/svg" width="43.124" height="43.125" viewBox="0 0 43.124 43.125">
+									  <g id="Group_5565" data-name="Group 5565">
+										<path id="Path_4612" data-name="Path 4612" d="M41.584,10.781h-7.7V1.54A1.54,1.54,0,0,0,32.343,0H1.54A1.54,1.54,0,0,0,0,1.54V36.964a6.161,6.161,0,0,0,6.161,6.161h30.8a6.161,6.161,0,0,0,6.161-6.161V12.321A1.54,1.54,0,0,0,41.584,10.781ZM12.321,7.7h9.241a1.54,1.54,0,1,1,0,3.08H12.321a1.54,1.54,0,1,1,0-3.08ZM26.183,36.964H7.7a1.54,1.54,0,0,1,0-3.08H26.183a1.54,1.54,0,1,1,0,3.08Zm0-6.161H7.7a1.54,1.54,0,1,1,0-3.08H26.183a1.54,1.54,0,1,1,0,3.08Zm0-6.161H7.7a1.54,1.54,0,1,1,0-3.08H26.183a1.54,1.54,0,1,1,0,3.08Zm0-6.161H7.7a1.54,1.54,0,0,1,0-3.08H26.183a1.54,1.54,0,0,1,0,3.08ZM40.044,36.964a3.08,3.08,0,0,1-6.161,0v-23.1h6.161v23.1Z" />
+									  </g>
+									</svg></figure>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#topics">Topics
+									<figure><svg xmlns="http://www.w3.org/2000/svg" width="44" height="48" viewBox="0 0 44 48">
+									  <path id="Icon" d="M39.112,48H4.891A4.851,4.851,0,0,1,0,43.2V9.6A4.852,4.852,0,0,1,4.891,4.8H15.107a7.351,7.351,0,0,1,13.787,0H39.112A4.851,4.851,0,0,1,44,9.6V43.2A4.85,4.85,0,0,1,39.112,48ZM12.223,33.6a2.4,2.4,0,1,0,0,4.8H24.446a2.4,2.4,0,1,0,0-4.8Zm0-9.6a2.4,2.4,0,1,0,0,4.8H31.779a2.4,2.4,0,1,0,0-4.8Zm0-9.6a2.4,2.4,0,1,0,0,4.8H31.779a2.4,2.4,0,1,0,0-4.8ZM22,4.8a2.4,2.4,0,1,0,2.444,2.4A2.427,2.427,0,0,0,22,4.8Z"/>
+									</svg></figure>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#pictures">Pictures
+									<figure>
+										<svg xmlns="http://www.w3.org/2000/svg" width="48.06" height="42.806" viewBox="0 0 48.06 42.806">
+										  <g id="picture" transform="translate(0 -54.821)" >
+											<g id="Group_5576" data-name="Group 5576" transform="translate(0 54.821)">
+											  <path id="Path_4615" data-name="Path 4615" d="M46.883,56.131a3.671,3.671,0,0,0-2.828-1.31H4a3.672,3.672,0,0,0-2.829,1.31A4.549,4.549,0,0,0,0,59.28V93.168a4.549,4.549,0,0,0,1.176,3.149A3.672,3.672,0,0,0,4,97.627h40.05a3.671,3.671,0,0,0,2.828-1.31,4.55,4.55,0,0,0,1.177-3.149V59.28A4.549,4.549,0,0,0,46.883,56.131ZM44.855,93.168a.908.908,0,0,1-.237.627.736.736,0,0,1-.563.264H4a.735.735,0,0,1-.563-.264.909.909,0,0,1-.238-.627V59.279a.907.907,0,0,1,.238-.627A.735.735,0,0,1,4,58.388h40.05a.734.734,0,0,1,.563.264.91.91,0,0,1,.237.627V93.168Z" transform="translate(0 -54.821)" />
+											  <path id="Path_4616" data-name="Path 4616" d="M77.9,137.522a4.785,4.785,0,1,0-3.4-1.4A4.635,4.635,0,0,0,77.9,137.522Z" transform="translate(-66.687 -120.534)" />
+											  <path id="Path_4617" data-name="Path 4617" d="M85.107,186.4l-4.005-4-8.01,8.01v4.806h35.244V184L97.923,173.587Z" transform="translate(-66.684 -160.476)" />
+											</g>
+										  </g>
+										</svg>
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#tasks">Tasks
+									<figure><svg id="contract_1_" data-name="contract (1)" xmlns="http://www.w3.org/2000/svg" width="41.128" height="41.127" viewBox="0 0 41.128 41.127">
+									  <g id="Group_5637" data-name="Group 5637" transform="translate(24.036)">
+										<g id="Group_5636" data-name="Group 5636">
+										  <path id="Path_4576" data-name="Path 4576" d="M306.475,7.022a3.593,3.593,0,0,0-1.059-2.556l-3.408-3.408A3.7,3.7,0,0,0,299.429,0h-.207V7.23h7.253V7.022Z" transform="translate(-299.222 0)" />
+										</g>
+									  </g>
+									  <g id="Group_5639" data-name="Group 5639">
+										<g id="Group_5638" data-name="Group 5638">
+										  <path id="Path_4577" data-name="Path 4577" d="M22,24.864a4.836,4.836,0,0,1,1.158-1.88l8.158-8.125V9.639H22.854a1.171,1.171,0,0,1-1.166-1.2V0H3.615A3.619,3.619,0,0,0,0,3.615v33.9a3.619,3.619,0,0,0,3.615,3.615H27.674a3.646,3.646,0,0,0,3.647-3.615V28.52L30,29.812a4.792,4.792,0,0,1-1.873,1.156l-3.831,1.279-.584.032a3.012,3.012,0,0,1-2.855-3.969ZM6.025,21.689h12.01a1.2,1.2,0,1,1,0,2.41H6.025a1.2,1.2,0,1,1,0-2.41Zm-1.2-3.615a1.2,1.2,0,0,1,1.2-1.2h12.01a1.2,1.2,0,1,1,0,2.41H6.025A1.2,1.2,0,0,1,4.82,18.074Zm0,9.639a1.2,1.2,0,0,1,1.2-1.2h12.01a1.2,1.2,0,1,1,0,2.41H6.025A1.2,1.2,0,0,1,4.82,27.713Zm18.035,6.025a1.2,1.2,0,1,1,0,2.41h-7.23a1.2,1.2,0,1,1,0-2.41ZM6.025,14.459a1.2,1.2,0,0,1,0-2.41h16.83a1.2,1.2,0,1,1,0,2.41Z" />
+										</g>
+									  </g>
+									  <g id="Group_5641" data-name="Group 5641" transform="translate(23.107 25.931)">
+										<g id="Group_5640" data-name="Group 5640">
+										  <path id="Path_4578" data-name="Path 4578" d="M288.743,322.808l-1.048,3.145a.6.6,0,0,0,.762.762l3.143-1.05Z" transform="translate(-287.663 -322.808)" />
+										</g>
+									  </g>
+									  <g id="Group_5643" data-name="Group 5643" transform="translate(25.61 16.01)">
+										<g id="Group_5642" data-name="Group 5642">
+										  <path id="Path_4579" data-name="Path 4579" d="M326.755,199.307l-7.936,7.936,3.422,3.422,7.935-7.936Z" transform="translate(-318.82 -199.307)" />
+										</g>
+									  </g>
+									  <g id="Group_5645" data-name="Group 5645" transform="translate(35.249 11.884)">
+										<g id="Group_5644" data-name="Group 5644">
+										  <path id="Path_4580" data-name="Path 4580" d="M443.989,148.618a2.516,2.516,0,0,0-3.42,0l-1.751,1.751,3.422,3.422,1.751-1.751A2.425,2.425,0,0,0,443.989,148.618Z" transform="translate(-438.819 -147.949)" />
+										</g>
+									  </g>
+									  <g id="Group_5648" data-name="Group 5648" transform="translate(40.422 15.953)">
+										<g id="Group_5647" data-name="Group 5647">
+										  <g id="Group_5646" data-name="Group 5646">
+											<path id="Path_4581" data-name="Path 4581" d="M503.215,198.815h0l.007-.007Z" transform="translate(-503.215 -198.791)" />
+											<path id="Path_4582" data-name="Path 4582" d="M503.3,198.686l.011-.011Z" transform="translate(-503.296 -198.669)" />
+											<path id="Path_4583" data-name="Path 4583" d="M503.436,198.607Z" transform="translate(-503.418 -198.602)"/>
+										  </g>
+										</g>
+									  </g>
+									</svg></figure>
+								</a>
+							</li>
+							<li class="active">
+								<a data-toggle="tab" href="#respondents">Respondents
+									<figure>
+										<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+										  <path id="Icon" d="M41.249,44H2.751A2.752,2.752,0,0,1,0,41.249V38.5c0-2.253,1.431-5.51,8.247-8.247A40.9,40.9,0,0,1,22,27.5a40.9,40.9,0,0,1,13.754,2.754C42.569,32.993,44,36.25,44,38.5v2.746A2.752,2.752,0,0,1,41.249,44ZM22,22A11,11,0,1,1,33,11,11.015,11.015,0,0,1,22,22Z" transform="translate(0 0.001)"/>
+										</svg>
+									</figure>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="resp-tabs-container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="tab-content">
+									<div id="respondents" class="tab-pane fade in active">
+										<div class="bg-section">
+										<div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 table-heading">
+											<h2>Respondents</h2>
+										</div>
+										<div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+											<div class="edit-tabs">
+												<ul class="nav nav-tabs pull-right">
+													<li>
+														<a data-toggle="tab" href="#edit">Edit Classifiers
+														</a>
+													</li>
+													<li>
+														<a data-toggle="tab" href="#edit-respondents">Edit Respondents
+														</a>
+													</li>
+													<li>
+														<a data-toggle="tab" href="#form-view">Form View
+														</a>
+													</li>
+													<li>
+														<a data-toggle="tab" href="#start-interview">Start Interview
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+							
+										<ul class="list-unstyled">
+											<li>8 interviews started.</li>
+											<li>4 interviews completed (Median time: 103598 min.).</li>
+											<li>2 interviews terminated (Median time: 35102 min.).</li>
+											<li>0 respondents redirected.</li>
+											<li>3 interviews not completed.</li>
+										</ul>
+										<div class="date-sec">
+											<p><b>First interview:</b>
+												<span> Oct. 11, 2018, 5:47 p.m.</span>
+											</p>
+											<p><b>Last interview:</b>
+												<span> Oct. 28, 2018, 9:14 p.m.</span>
+											</p>
+										</div>
+										<div class="table-responsive"> 
+										<table class="table project-table table-bordered">
+											<thead>
+												<tr>
+													<th style="border-left:0;">Group
+													</th>
+													<th>Quota
+													</th>
+													<th>Complete Count
+													</th>
+													<th>Unfinished Count
+													</th>
+													<th style="border-right:0;">Median Time
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>TOTAL</td>
+													<td>00</td>
+													<td>00</td>
+													<td>00</td>
+													<td style="border-right:0;">103598 min.</td>
+												</tr>
+											
+											</tbody>
+										</table>
+										</div>
+										<div class="date-sec">
+											<p class="report">Download reports
+												<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+												  <g id="Group_5519" data-name="Group 5519" transform="translate(-1275 -597)">
+													<rect id="Path" width="31" height="31" transform="translate(1275 597)" fill="rgba(0,0,0,0)"/>
+													<circle id="Op_component_1" data-name="Op component 1" cx="2.5" cy="2.5" r="2.5" transform="translate(1288 602)" fill="#205081"/>
+													<circle id="Op_component_2" data-name="Op component 2" cx="2.5" cy="2.5" r="2.5" transform="translate(1288 610)" fill="#205081"/>
+													<circle id="Op_component_3" data-name="Op component 3" cx="2.5" cy="2.5" r="2.5" transform="translate(1288 618)" fill="#205081"/>
+												  </g>
+												</svg>
+											</p>
+										</div>
+										<div class="table-responsive tbl"> 
+										<table class="table project-table table-bordered">
+											<thead>
+												<tr>
+													<th class="col-md-10" style="border-left:0;">Condition
+													</th>
+													<th class="col-md-2 text-center">Total
+													</th>
+												
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="col-md-10">PRE TERMINATE May I ask why not?</td>
+													<td class="col-md-2">1</td>
+												</tr>
+												<tr>
+													<td class="col-md-10">Total</td>
+													<td class="col-md-2">1</td>
+												</tr>
+											
+											</tbody>
+										</table>
+										</div>
+										<div class="date-sec">
+											<p class="report">Active interviews:
+											</p>
+										</div>
+										<div class="table-responsive"> 
+										<table class="table project-table">
+											<tbody>
+												<tr class="col-md-12">
+													<td style="border-left:0;">9994</td>
+													<td>Oct. 14, 2018, 10:04 p.m.</td>
+													<td><a href="#">Continue</a></td>
+													<td><a href="#">Live View</a></td>
+												</tr>
+												<tr class="col-md-12">
+													<td style="border-left:0;">9999</td>
+													<td>Oct. 29, 2018, 8:12 p.m.</td>
+													<td><a href="#">Continue</a></td>
+													<td><a href="#">Live View</a></td>
+												</tr>
+												<tr class="col-md-12">
+													<td style="border-left:0;">9992</td>
+													<td>Nov. 27, 2018, 1:41 p.m.</td>
+													<td><a href="#">Continue</a></td>
+													<td><a href="#">Live View</a></td>
+												</tr>
+											</thead>
+										</table>
+										</div>
+										</div>
+									</div>
+									<div id="tasks" class="tab-pane fade">
+										<div class="bg-section">
+										<div class="col-md-4 col-sm-4 col-xs-12 table-heading">
+											<h2>Tasks</h2>
+										</div>
+										<div class="col-md-8 col-sm-8 col-xs-12">
+											<div class="edit-tabs">
+												<ul class="nav nav-tabs pull-right">
+													<li>
+														<a data-toggle="tab" href="#edit">Edit All Tasks
+														</a>
+													</li>
+													<li class="active circle-img">
+														<a data-toggle="tab" href="#edit-respondents">Add Task
+														<svg id="_add_circle" data-name=" add_circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+															  <rect id="Path" width="24" height="24" fill="rgba(0,0,0,0)"/>
+															  <path id="Icon" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM6,9a1,1,0,0,0,0,2H9v3a1,1,0,1,0,2,0V11h3a1,1,0,0,0,0-2H11V6A1,1,0,1,0,9,6V9Z" transform="translate(2 2)" />
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<div class="table-responsive task-table"> 
+												<table class="table">
+													<tbody>
+														<tr class="col-md-12">
+															<td>1.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[DEVICE_TYPE]: Information </td>
+														</tr>
+														<tr class="col-md-12">
+															<td>2.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[S1]: Question: Single choice</td>
+														</tr>
+														<tr class="col-md-12">
+															<td>3.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[S4]: Question: Short Free Text </td>
+														</tr>
+														<tr class="col-md-12">
+															<td>4.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[SCHOOLS_LIST]: Combo Box Options</td>
+														</tr>
+														<tr class="col-md-12">
+															<td>5.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[S5]: Question: Single choice</td>
+														</tr>
+														<tr class="col-md-12">
+															<td>6.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[S6]: Question: Short Free Text </td>
+														</tr>
+														<tr class="col-md-12">
+															<td>7.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[S7]: Question: Multiple choice</td>
+														</tr>
+														<tr class="col-md-12">
+															<td>8.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[S18]: Question: Single choice </td>
+														</tr>
+														<tr class="col-md-12">
+															<td>9.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[T1]: Custom Attributes Grid</td>
+														</tr>
+														<tr class="col-md-12">
+															<td>10.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[PRE TERMINATE S2]: Question: Single choice</td>
+														</tr>
+														<tr class="col-md-12">
+															<td>11.</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td><a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"/>
+																</svg></a>
+															</td>
+															<td>[TERMINATE]: Terminate </td>
+														</tr>
+													
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+										</div>
+									</div>
+									<div id="pictures" class="tab-pane fade">
+										<div class="bg-section">
+										<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 table-heading">
+											<div class="picture-tab">
+												<h2>Pictures</h2>
+												<h5>(8 pictures uploaded.)</h5>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+											<div class="edit-tabs">
+												<a class="file btn pull-right">
+														Upload Pictures
+														<input type="file" name="" placeholder="Upload Pictures"/>
+												</a>
+											</div>
+										</div>
+										<div class="gallery-upload col-md-12 col-sm-12 col-xs-12">
+											<div class="picture-gallery text-center">
+												<figure>
+													<img src="images/avidelo.png" width="126" height="106" alt="avidelo" class="img-responsive">
+												</figure>
+												<p>Ipsum</p>
+											</div>
+											<div class="picture-gallery text-center">
+												<figure>
+													<img src="images/avidelo.png" width="126" height="106" alt="avidelo" class="img-responsive">
+												</figure>
+												<p>Ipsum</p>
+											</div>
+											<div class="picture-gallery text-center">
+												<figure>
+													<img src="images/avidelo.png" width="126" height="106" alt="avidelo" class="img-responsive">
+												</figure>
+												<p>Ipsum</p>
+											</div>
+											<div class="picture-gallery text-center">
+												<figure>
+													<img src="images/avidelo.png" width="126" height="106" alt="avidelo" class="img-responsive">
+												</figure>
+												<p>Ipsum</p>
+											</div>
+											<div class="picture-gallery text-center">
+												<figure>
+													<img src="images/avidelo.png" width="126" height="106" alt="avidelo" class="img-responsive">
+												</figure>
+												<p>Ipsum</p>
+											</div>
+											<div class="picture-gallery text-center">
+												<figure>
+													<img src="images/avidelo.png" width="126" height="106" alt="avidelo" class="img-responsive">
+												</figure>
+												<p>Ipsum</p>
+											</div>
+											<div class="picture-gallery text-center">
+												<figure>
+													<img src="images/avidelo.png" width="126" height="106" alt="avidelo" class="img-responsive">
+												</figure>
+												<p>Ipsum</p>
+											</div>
+											<div class="picture-gallery text-center">
+												<figure>
+													<img src="images/avidelo.png" width="126" height="106" alt="avidelo" class="img-responsive">
+												</figure>
+												<p>Ipsum</p>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div id="topics" class="tab-pane fade">
+										<div class="bg-section">
+										<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 table-heading">
+											<div class="picture-tab">
+												<h2>Topics</h2>
+												<h5>(59 statements, 0 suppressed.)</h5>
+											</div>
+										</div>
+										<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+											<div class="edit-tabs">
+												<ul class="nav nav-tabs pull-right">
+													<li>
+														<a data-toggle="tab" href="#edit">Edit Topics
+														</a>
+													</li>
+													<li class="circle-img">
+														<a data-toggle="tab" href="#edit-respondents">Edit Statements
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<div class="table-responsive topics-table"> 
+												<table class="table">
+													<tbody>
+														<tr>
+															<td>1.</td>
+															<td>Efficacy</td>
+															<td>(12 statements)</td>
+															
+														</tr>
+														<tr>
+															<td>2.</td>
+															<td>Safety</td>
+															<td>(10 statements)</td>
+															
+														</tr>
+														<tr>
+															<td>3.</td>
+															<td>Pharmacology </td>
+															<td>(9 statements)</td>
+														</tr>
+														<tr>
+															<td>4.</td>
+															<td>Convenience</td>
+															<td>(12 statements)</td>
+														</tr>
+														<tr>
+															<td>5.</td>
+															<td>Clinical Trial Design</td>
+															<td>(10 statements)</td>
+														</tr>
+														<tr>
+															<td>6.</td>
+															<td>Tolerability </td>
+															<td>(6 statements)</td>
+														</tr>
+														<tr>
+															<td>7.</td>
+															<td>Summary statements</td>
+															<td>(0 statements)</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+										</div>
+									</div>
+									<div id="reports" class="tab-pane fade">
+										<div class="bg-section">
+											<div class="col-md-12 col-sm-12 col-xs-12 table-heading">
+											<div class="picture-tab">
+												<h2>Create crosstab report</h2>
+												<div class="dropdown">
+													<figure class="pull-right" data-toggle="dropdown"><img src="images/svg/dotes.svg" width="31" height="31" alt="dotes" ></figure>
+													<ul class="dropdown-menu pull-right">
+													  <li data-toggle="tab" href="#charts"><a href="#charts">Charts</a></li>
+													  <li><a href="#">Crosstab Reports</a></li>
+													  <li><a href="#">Download Data Map</a></li>
+													  <li><a href="#">Download Design Result Data File</a></li>
+													  <li><a href="#">Download Design Marginals Report</a></li>
+														<li><a href="#">Download Design Result Data With Unfinished Interviews</a></li>
+														<li><a href="#">Download Design Attributes Selection Data</a></li>
+														<li><a href="#">Download Respondents Report</a></li>
+													</ul>
+												</div>
+											</div>
+											</div>
+										<div class="report-border col-md-12 col-sm-12 col-xs-12">
+											<div class="row">
+												<div class="col-md-5 col-sm-12 col-xs-12">
+													<form class="report-form">
+														<div class="form-group">
+															<label>Name:</label>
+															<input type="text" class="form-control">
+														</div>
+														<div class="checkbox-box">
+															<div class="checkbox">
+																<input id="checkbox7" class="" type="checkbox">
+																<label for="checkbox7">
+																	Calculate average:
+																</label>
+															</div>
+															<div class="checkbox">
+																<input id="checkbox8" class="" type="checkbox">
+																<label for="checkbox8">
+																	Group items:
+																</label>
+															</div>
+														</div>
+														<div class="row attach-table">
+														<div class="col-md-7">
+														<div class="report-select">
+															<label>Select tasks for rows:	</label>
+															<select>
+																<option value="0"></option>
+																<option value="a">[S1] Single Choice</option>
+																<option value="b">[S5] Single Choice</option>
+																
+															</select>
+														</div>
+														<div class="select-options">
+															<select>
+																<option value="0"></option>
+																<option value="c">[S1] Single Choice</option>
+																<option value="d">[S5] Single Choice</option>
+																
+															</select>
+														</div>
+														<div class="select-options">
+															<select>
+																<option value="0"></option>
+																<option value="e">[S1] Single Choice</option>
+																<option value="f">[S5] Single Choice</option>
+															</select>
+														</div>
+														</div>
+														<div class="select-table1 a box">
+															<table class="table table-bordered">
+																<tbody>
+																	<tr>
+																		<td>1. Still in high school
+																		<input type="radio" name="gender" value="male" checked>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>2. Don’t have the money
+																		<input type="radio" name="gender" value="male">
+																	
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>3. Deferring college until next year
+																		<input type="radio" name="gender" value="male">
+																		
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>4. Deferring college until some other time (more than 1 year)
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																
+																</tbody>
+															</table>
+														</div>
+														<div class="select-table1 b box">
+															<table class="table table-bordered">
+																<tbody>
+																	<tr>
+																		<td>1. Still in high school
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>2. Don’t have the money
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>3. Deferring college until next year
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	
+																</tbody>
+															</table>
+														</div>
+														<div class="select-table1 c box">
+															<table class="table table-bordered">
+																<tbody>
+																	<tr>
+																		<td>1. Still in high school
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>2. Don’t have the money
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>3. Deferring college until next year
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>4. Deferring college until some other time (more than 1 year)
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>5. Not interested
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>6. Don’t think I’ll get in Don’t think I’ll get in
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	
+																</tbody>
+															</table>
+														</div>
+														<div class="select-table1 d box">
+															<table class="table table-bordered">
+																<tbody>
+																	<tr>
+																		<td>1. Still in high school
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>2. Don’t have the money
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>3. Deferring college until next year
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>4. Deferring college until some other time (more than 1 year)
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>5. Not interested
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>6. Don’t think I’ll get in Don’t think I’ll get in
+																		<input type="radio" name="gender" value="male">
+																		
+																		</td>
+																	</tr>
+																	
+																</tbody>
+															</table>
+														</div>
+														<div class="select-table1 e box">
+															<table class="table table-bordered">
+																<tbody>
+																	<tr>
+																		<td>1. Still in high school
+																		<input type="radio" name="gender" value="male">
+																		
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>2. Don’t have the money
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>3. Deferring college until next year
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>4. Deferring college until some other time (more than 1 year)
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>5. Not interested
+																			<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>6. Don’t think I’ll get in Don’t think I’ll get in
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>7. Not planning to go to college
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>8. Not planning to go to college
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div class="select-table1 f box">
+															<table class="table table-bordered">
+																<tbody>
+																	<tr>
+																		<td>1. Still in high school
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>2. Don’t have the money
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>3. Deferring college until next year
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>4. Deferring college until some other time (more than 1 year)
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>5. Not interested
+																			<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>6. Don’t think I’ll get in Don’t think I’ll get in
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>7. Not planning to go to college
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>8. Not planning to go to college
+																		<input type="radio" name="gender" value="male">
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														
+														</div></form>
+												</div>
+												<div class="col-md-7 col-sm-12 col-xs-12">
+													<form class="report-form">
+														<h4>Select tasks for coloums:</h4>
+													<div class=" inline-select">
+														<div class="report-select col-md-4 col-sm-4 col-xs-12">
+															<select>
+																<option value="0"></option>
+																<option value="2">[S5] Single Choice</option>
+																<option value="1">[S1] Single Choice</option>
+																<option value="2">[S5] Single Choice</option>
+															</select>
+														</div>
+														<div class="report-select col-md-4 col-sm-4 col-xs-12">
+															<select>
+																<option value="0"></option>
+																<option value="2">[S5] Single Choice</option>
+																<option value="3">[S1] Single Choice</option>
+																<option value="4">[S5] Single Choice</option>
+																
+															</select>
+														</div>
+														<div class="report-select col-md-4 col-sm-12 col-xs-12">
+															<select>
+																<option value="0"></option>
+																<option value="2">[S5] Single Choice</option>
+																<option value="5">[S1] Single Choice</option>
+																<option value="6">[S5] Single Choice</option>
+																
+															</select>
+														</div>
+													</div>
+													<div class="select-table 1 box">
+														<table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td>1. Still in high school</td>
+																	<td>2. Don’t have the money</td>
+																	<td>3. Deferring college until next year</td>
+																	<td>4. Deferring college until some other time (more than 1 year)</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="select-table 2 box">
+														<table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td>1. Still in high school</td>
+																	<td>2. Don’t have the money</td>
+																	<td>3. Deferring college until next year</td>
+																	<td>4. Deferring college until some other time (more than 1 year)</td>
+																	<td>5. Not interested</td>
+																	<td>6. Don’t think I’ll get in Don’t think I’ll get in</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="select-table 3 box">
+														<table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td>1. Still in high school</td>
+																	<td>2. Don’t have the money</td>
+																	<td>3. Deferring college until next year</td>
+																	<td>4. Deferring college until some other time (more than 1 year)</td>
+																	<td>5. Not interested</td>
+																	<td>6. Don’t think I’ll get in Don’t think I’ll get in</td>
+																	<td>7. Not planning to go to college</td>
+																	<td>8. Not planning to go to college</td>
+																	
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="select-table 4 box">
+														<table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td>1. Still in high school</td>
+																	<td>2. Don’t have the money</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="select-table 5 box">
+														<table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td>1. Still in high school</td>
+																	<td>2. Don’t have the money</td>
+																	<td>1. Still in high school</td>
+																	<td>2. Don’t have the money</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="select-table 6 box">
+														<table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td>1. Still in high school</td>
+																	<td>2. Don’t have the money</td>
+																	<td>1. Still in high school</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										</div>
+										<div class="note">
+											<form>
+												<div class="form-group">
+													<label>Notes:</label>
+													<textarea class="form-control" rows="5" id="comment"></textarea>
+												</div>
+												<div class="form-group">
+													<a href="#" class="trans-btn text-center">Create Report</a>
+												</div>
+											</form>
+										</div>
+										<div class="table-responsive note">
+											<table class="table">
+												<tr><th>Crosstab reports:</th></tr>
+												<tr>
+													<td colspan="6">1. New School Test, New School Test - 2</td>
+													<td>
+														<a href="#">
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+															<path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"></path>
+															</svg>
+														</a>
+													</td>
+													<td>
+														<a href="#">
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34"><path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"></path>
+															</svg>
+														</a>
+													</td>
+													<td>
+														<a href="#">
+															<svg xmlns="http://www.w3.org/2000/svg" width="13.311" height="18.251" viewBox="0 0 13.311 18.251">
+															  <g id="delete-photo" transform="translate(-121.874)">
+																<path id="Path_4624" data-name="Path 4624" d="M176.415,245.621a.405.405,0,0,0,.405.405h10.29a.405.405,0,0,0,.405-.405V232.487h-11.1v13.134Zm7.83-10.9h1.52v8.837h-1.52Zm-3.04,0h1.52v8.837h-1.52Zm-3.04,0h1.52v8.837h-1.52Z" transform="translate(-53.436 -227.775)" fill="#205081"/>
+																<path id="Path_4625" data-name="Path 4625" d="M131.946,1.863V.405A.405.405,0,0,0,131.541,0h-6.023a.405.405,0,0,0-.405.405V2.37h-2.833a.405.405,0,0,0-.405.405V3.8a.405.405,0,0,0,.405.405h12.5a.405.405,0,0,0,.405-.405V2.775a.405.405,0,0,0-.405-.405h-2.833V1.863Zm-1.52.423h-3.793V1.52h3.793v.766Z" fill="#205081"/>
+															  </g>
+															</svg>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="6">2. New School Test, New School Test - gfdgdfg</td>
+													<td>
+														<a href="#">
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+															<path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"></path>
+															</svg>
+														</a>
+													</td>
+													<td>
+														<a href="#">
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34"><path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"></path>
+															</svg>
+														</a>
+													</td>
+													<td>
+														<a href="#">
+															<svg xmlns="http://www.w3.org/2000/svg" width="13.311" height="18.251" viewBox="0 0 13.311 18.251">
+															  <g id="delete-photo" transform="translate(-121.874)">
+																<path id="Path_4624" data-name="Path 4624" d="M176.415,245.621a.405.405,0,0,0,.405.405h10.29a.405.405,0,0,0,.405-.405V232.487h-11.1v13.134Zm7.83-10.9h1.52v8.837h-1.52Zm-3.04,0h1.52v8.837h-1.52Zm-3.04,0h1.52v8.837h-1.52Z" transform="translate(-53.436 -227.775)" fill="#205081"/>
+																<path id="Path_4625" data-name="Path 4625" d="M131.946,1.863V.405A.405.405,0,0,0,131.541,0h-6.023a.405.405,0,0,0-.405.405V2.37h-2.833a.405.405,0,0,0-.405.405V3.8a.405.405,0,0,0,.405.405h12.5a.405.405,0,0,0,.405-.405V2.775a.405.405,0,0,0-.405-.405h-2.833V1.863Zm-1.52.423h-3.793V1.52h3.793v.766Z" fill="#205081"/>
+															  </g>
+															</svg>
+														</a>
+													</td>
+												</tr>
+											</table>
+											<form>
+											<div class="form-group">
+												<a href="#" class="trans-btn text-center">Create Report</a>
+											</div>
+											</form>
+										</div>
+									</div>
+									<div id="study" class="tab-pane fade">
+										<div class="bg-section">
+											<div class="col-md-12 col-sm-12 col-xs-12 table-heading">
+												<div class="picture-tab">
+													<h2>Study</h2>
+													<div class="edit-tabs">
+														<div class="dropdown">
+															<figure class="pull-right" data-toggle="dropdown"><img src="images/svg/dotes.svg" width="31" height="31" alt="dotes" ></figure>
+															<ul class="dropdown-menu pull-right">
+															  <li><a href="#charts">Charts</a></li>
+															  <li><a href="#">Crosstab Reports</a></li>
+															  <li><a href="#">Download Data Map</a></li>
+															  <li><a href="#">Download Design Result Data File</a></li>
+															  <li><a href="#">Download Design Marginals Report</a></li>
+															  <li><a href="#">Download Design Result Data With Unfinished Interviews</a></li>
+															  <li><a href="#">Download Design Attributes Selection Data</a></li>
+															  <li><a href="#">Download Respondents Report</a></li>
+															</ul>
+														</div>
+													</div>
+													<ul class="list-unstyled pull-right spacing">
+															<li>
+																<a href="new-queboxe.html">Edit Study
+																</a>
+															</li>
+													</ul>
+												</div>
+												<div class="study-info row">
+													<ul class="list-unstyled col-md-12">
+														<div class="row">
+														<li class="col-md-2">Study name:</li>
+														<li class="col-md-3"><span>New School Test</span></li>
+														</div>
+													</ul>
+													<ul class="list-unstyled col-md-12">
+														<div class="row">
+														<li class="col-md-2">Project name:</li>
+														<li class="col-md-3"><span>New School Test</span></li>
+														</div>
+													</ul>
+													<ul class="list-unstyled col-md-12">
+														<div class="row">
+														<li class="col-md-2">Owner:                            </li>
+														<li class="col-md-3"><span>Anton Golubkov</span></li>
+														</div>
+													</ul>
+													<ul class="list-unstyled col-md-12">
+														<div class="row">
+														<li class="col-md-2">Send invoice to:</li>
+														<li class="col-md-3"><span>anton.golubkov+quboxe@gmail.com</span></li>
+													</div>
+													</ul>
+												</div>
+											</div>
+												<!-- <div class="left"></div> -->
+												<div class="share-study col-md-12 col-sm-12 col-xs-12">
+													<div class="report-form">
+														<label>Share study with:
+															<select>
+																<option></option>
+																<option></option>
+															</select>
+														</label>
+														<a href="#" class="share-btn">Share</a>
+													</div>
+												</div>
+												<!-- <div class="right"></div> -->
+											<div class="responsive-table dwnld-rprts col-md-12 col-sm-12 col-xs-12">
+													<table class="table table-border text-center">
+														<h3>Download reports</h3>
+														<thead>
+															<tr>
+															<th>Interviews</th>
+															<th>Number</th>
+															<th>CSV</th>
+															<th>Marginals</th>
+															<th>Compact CSV</th>
+															<th>Labeled CSV</th>
+															<th style="border-right:0;">SPSS</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Complete</td>
+																<td>04</td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>SPSS</span></td>
+															</tr>
+															<tr>
+																<td>Complete and Screened</td>
+																<td>04</td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>SPSS</span></td>
+															</tr>
+															<tr>
+																<td>All</td>
+																<td>04</td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>CSV</span></td>
+																<td><span>SPSS</span></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+									
+										</div>
+									</div>
+									<div id="charts" class="tab-pane fade">
+										<div class="bg-section">
+											<div class="col-md-12 col-sm-12 col-xs-12 table-heading">
+												<div class="picture-tab">
+													<h2>Report on Demonstration Study #1 MASTER, Demo Study MASTER</h2>
+													<div class="dropdown">
+														<figure class="pull-right" data-toggle="dropdown"><img src="images/svg/dotes.svg" width="31" height="31" alt="dotes" ></figure>
+														<ul class="dropdown-menu pull-right">
+														  <li><a href="#charts">Charts</a></li>
+														  <li><a href="#">Crosstab Reports</a></li>
+														  <li><a href="#">Download Data Map</a></li>
+														  <li><a href="#">Download Design Result Data File</a></li>
+															  <li><a href="#">Download Design Marginals Report</a></li>
+															  <li><a href="#">Download Design Result Data With Unfinished Interviews</a></li>
+															  <li><a href="#">Download Design Attributes Selection Data</a></li>
+															  <li><a href="#">Download Respondents Report</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="charts-feature">
+													
+													<p>Charts</p>
+														<ul class="list-unstyled pull-right col-lg-8 col-md-10 col-sm-12 col-xs-10">
+															<div class="row">
+																<li class="col-md-4 col-sm-6 col-xs-12 charts">Sort Charts:
+																	<ul class="list-unstyled">
+																		<li>
+																			<a href="#">
+																			<img src="images/svg/sort-icon.svg" width="29" height="29" alt="sort-icon">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#">
+																			<img src="images/svg/sort.svg" width="29" height="29" alt="sort">
+																			</a>
+																		</li>
+																	</ul>
+																</li>
+																<li class="col-md-4 col-sm-6 col-xs-12">
+																	<select class="pull-right">
+																		<option>Download Interview</option>
+																		<option>_</option>
+																		<option>_</option>
+																	</select>
+																</li>
+																<li class="col-md-4 col-sm-6 col-xs-12">
+																	<select class="pull-right">
+																		<option>Show Filters</option>
+																		<option>_</option>
+																		<option>_</option>
+																	</select>
+																</li>
+															</div>
+														</ul>
+												</div>
+												<div class="report-formsec col-md-12 col-sm-12 col-xs-12">
+													<h4>Add New Chart</h4>
+													<form class="row">
+														<div class="form-group col-md-6 col-sm-6 col-xs-12">
+															<label>Chart Type:</label>
+															<select>
+																<option>Average rating of select messages</option>
+																<option>_</option>
+																<option>_</option>
+															</select>
+														</div>
+														<div class="form-group col-md-6 col-sm-6 col-xs-12">
+															<label>Title:</label>
+															<input type="text" placeholder="Average rating of select messages">
+														</div>
+														<div class="form-group col-md-6 col-sm-6 col-xs-12">
+															<label>Task:</label>
+															<select>
+																<option>_</option>
+																<option>_</option>
+																<option>_</option>
+															</select>
+														</div>
+														<div class="form-group col-md-6 col-sm-6 col-xs-12">
+															<label>Horizontal axis:</label>
+															<input type="text" placeholder="Average rating of select messages">
+														</div>
+														<div class="form-group col-md-6 col-sm-6 col-xs-12">
+															<label>Vertical axis:</label>
+															<input type="text" placeholder=" ">
+														</div>
+														<div class="form-group col-md-12 col-sm-6 col-xs-12">
+															<a href="#" class="share-btn">Add Chart</a>
+														</div>
+													</form>
+												</div>
+												<div class="text-editor">
+													<div class="col-md-12 col-sm-12 col-xs-12">
+														<div class="row">
+														<div class="editor-header col-md-6
+														col-sm-12 col-xs-12">
+															<h4>Messages most frequently selected as motivating or important</h4>
+															<ul class="list-unstyled">
+																<li>
+																	<svg xmlns="http://www.w3.org/2000/svg" width="18.228" height="18.139" viewBox="0 0 18.228 18.139">
+																	  <g id="pencil-edit-button" transform="translate(-0.001 -1.289)">
+																		<path id="Path_4623" data-name="Path 4623" d="M11.335,4.316l3.708,3.708L5.657,17.41,1.951,13.7Zm6.522-.894L16.2,1.768a1.641,1.641,0,0,0-2.318,0L12.3,3.352,16.009,7.06l1.848-1.848A1.264,1.264,0,0,0,17.857,3.422ZM.011,18.914a.422.422,0,0,0,.51.5l4.132-1L.947,14.706Z" transform="translate(0)" fill="#205081"/>
+																	  </g>
+																	</svg>
+																</li>
+															</ul>
+														</div>
+														<div class="right-editor col-md-6 col-sm-12 col-xs-12">
+															<ul class="list-unstyled list-inline">
+															<div class="border-list">
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="13.311" height="18.251" viewBox="0 0 13.311 18.251">
+																	  <g id="delete-photo" transform="translate(-121.874)">
+																		<path id="Path_4624" data-name="Path 4624" d="M176.415,245.621a.405.405,0,0,0,.405.405h10.29a.405.405,0,0,0,.405-.405V232.487h-11.1v13.134Zm7.83-10.9h1.52v8.837h-1.52Zm-3.04,0h1.52v8.837h-1.52Zm-3.04,0h1.52v8.837h-1.52Z" transform="translate(-53.436 -227.775)" fill="#205081"/>
+																		<path id="Path_4625" data-name="Path 4625" d="M131.946,1.863V.405A.405.405,0,0,0,131.541,0h-6.023a.405.405,0,0,0-.405.405V2.37h-2.833a.405.405,0,0,0-.405.405V3.8a.405.405,0,0,0,.405.405h12.5a.405.405,0,0,0,.405-.405V2.775a.405.405,0,0,0-.405-.405h-2.833V1.863Zm-1.52.423h-3.793V1.52h3.793v.766Z" fill="#205081"/>
+																	  </g>
+																	</svg>
+																</a></li>
+																
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"></path> -->
+																</svg> 
+																</a></li>
+																
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"></path>
+																</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="19.527" height="19.523" viewBox="0 0 19.527 19.523">
+																  <g id="settings-gears" transform="translate(-0.001 -4.737)">
+																	<path id="Path_4631" data-name="Path 4631" d="M2.164,16.64a8.021,8.021,0,0,0,.717,1.7l-.866,1.092a.9.9,0,0,0,.067,1.188l1.491,1.491a.892.892,0,0,0,1.188.067l1.085-.859a7.883,7.883,0,0,0,1.771.749l.163,1.4a.894.894,0,0,0,.887.792h2.11a.894.894,0,0,0,.887-.792l.156-1.347a7.974,7.974,0,0,0,1.9-.767l1.05.831a.9.9,0,0,0,1.188-.067l1.491-1.491a.892.892,0,0,0,.067-1.188L16.7,18.4a7.789,7.789,0,0,0,.781-1.866l1.258-.145a.894.894,0,0,0,.792-.887V13.4a.894.894,0,0,0-.792-.887L17.5,12.364a7.839,7.839,0,0,0-.749-1.845l.763-.965a.9.9,0,0,0-.067-1.188L15.955,6.879a.892.892,0,0,0-1.188-.067l-.937.742a7.866,7.866,0,0,0-1.94-.813l-.141-1.212a.894.894,0,0,0-.887-.792H8.752a.894.894,0,0,0-.887.792L7.723,6.741a7.833,7.833,0,0,0-1.99.841l-.972-.77a.9.9,0,0,0-1.188.067L2.083,8.37a.892.892,0,0,0-.067,1.188l.813,1.028a7.688,7.688,0,0,0-.735,1.863l-1.3.148A.894.894,0,0,0,0,13.484v2.11a.894.894,0,0,0,.792.887Zm7.645-5.708A3.488,3.488,0,1,1,6.32,14.421,3.493,3.493,0,0,1,9.809,10.933Z" fill="#205081"/>
+																  </g>
+																</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg id="expand" xmlns="http://www.w3.org/2000/svg" width="19.523" height="19.523" viewBox="0 0 19.523 19.523">
+																	  <path id="Path_4632" data-name="Path 4632" d="M259.173,0l2.44,2.44-3.835,3.835,2.092,2.092L263.7,4.532l2.44,2.44V0Z" transform="translate(-246.622)" fill="#205081"/>
+																	  <path id="Path_4633" data-name="Path 4633" d="M6.275,257.778,2.44,261.613,0,259.173v6.973H6.973l-2.44-2.44,3.835-3.835Z" transform="translate(0 -246.622)" fill="#205081"/>
+																	  <path id="Path_4634" data-name="Path 4634" d="M259.87,257.778l-2.092,2.092,3.835,3.835-2.44,2.44h6.973v-6.973l-2.44,2.44Z" transform="translate(-246.622 -246.622)" fill="#205081"/>
+																	  <path id="Path_4635" data-name="Path 4635" d="M6.973,0H0V6.973l2.44-2.44L6.275,8.367,8.367,6.275,4.532,2.44Z" fill="#205081"/>
+																	</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="22.681" height="15.121" viewBox="0 0 22.681 15.121">
+  <g id="filter-results-button" transform="translate(0 -76.5)">
+    <g id="filter" transform="translate(0 76.5)">
+      <path id="Path_4629" data-name="Path 4629" d="M8.82,91.621h5.04V89.1H8.82ZM0,76.5v2.52H22.681V76.5Zm3.78,8.82H18.9V82.8H3.78Z" transform="translate(0 -76.5)" fill="#205081"/>
+    </g>
+  </g>
+</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg id="Group_5716" data-name="Group 5716" xmlns="http://www.w3.org/2000/svg" width="27.327" height="31.794" viewBox="0 0 27.327 31.794">
+  <g id="file" transform="translate(0 0)">
+    <path id="Path_4627" data-name="Path 4627" d="M96.666,24.647H88.435A1.536,1.536,0,0,1,86.9,23.112V1.535A1.536,1.536,0,0,1,88.435,0H99.4V.508a1.492,1.492,0,0,0-.009.163V4.876a2.164,2.164,0,0,0,2.162,2.162h4.206c.044,0,.09,0,.134-.006h.534V23.112a1.536,1.536,0,0,1-1.535,1.535H96.666Z" transform="translate(-86.9)"/>
+    <path id="Path_4628" data-name="Path 4628" d="M93.04,6.944H88.823a1.288,1.288,0,0,1-1.277-1.277V1.447A.646.646,0,0,1,88.2.8a.629.629,0,0,1,.453.192l4.85,4.85A.646.646,0,0,1,93.04,6.944Z" transform="translate(-74.178 -0.777)"/>
+  </g>
+  <text id="PNG" transform="translate(0.88 15.435)" fill="#fff" font-size="10" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">PNG</tspan></text>
+  <g id="Group_5713" data-name="Group 5713" transform="translate(17.401 18.941)">
+    <g id="into-inbox-symbol" transform="translate(0)">
+      <path id="Path_4630" data-name="Path 4630" d="M14.194,24.537a.248.248,0,0,1,0,.3L9.479,30.97a.25.25,0,0,1-.4,0L4.37,24.84a.25.25,0,0,1,.291-.385l3.12,1.232V18.464a.25.25,0,0,1,.25-.25h2.5a.25.25,0,0,1,.25.25v7.224l3.12-1.232A.249.249,0,0,1,14.194,24.537Z" transform="translate(-4.318 -18.214)"/>
+    </g>
+  </g>
+</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg id="Group_5716" data-name="Group 5716" xmlns="http://www.w3.org/2000/svg" width="27.327" height="31.794" viewBox="0 0 27.327 31.794">
+  <g id="file" transform="translate(0 0)">
+    <path id="Path_4627" data-name="Path 4627" d="M96.666,24.647H88.435A1.536,1.536,0,0,1,86.9,23.112V1.535A1.536,1.536,0,0,1,88.435,0H99.4V.508a1.492,1.492,0,0,0-.009.163V4.876a2.164,2.164,0,0,0,2.162,2.162h4.206c.044,0,.09,0,.134-.006h.534V23.112a1.536,1.536,0,0,1-1.535,1.535H96.666Z" transform="translate(-86.9)"/>
+    <path id="Path_4628" data-name="Path 4628" d="M93.04,6.944H88.823a1.288,1.288,0,0,1-1.277-1.277V1.447A.646.646,0,0,1,88.2.8a.629.629,0,0,1,.453.192l4.85,4.85A.646.646,0,0,1,93.04,6.944Z" transform="translate(-74.178 -0.777)"/>
+  </g>
+  <text id="XLS" transform="translate(1.88 15.435)" fill="#fff" font-size="10" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">XLS</tspan></text>
+  <g id="Group_5713" data-name="Group 5713" transform="translate(17.401 18.941)">
+    <g id="into-inbox-symbol" transform="translate(0)">
+      <path id="Path_4630" data-name="Path 4630" d="M14.194,24.537a.248.248,0,0,1,0,.3L9.479,30.97a.25.25,0,0,1-.4,0L4.37,24.84a.25.25,0,0,1,.291-.385l3.12,1.232V18.464a.25.25,0,0,1,.25-.25h2.5a.25.25,0,0,1,.25.25v7.224l3.12-1.232A.249.249,0,0,1,14.194,24.537Z" transform="translate(-4.318 -18.214)"/>
+    </g>
+  </g>
+</svg>
+																</a></li>
+															</div>
+															</ul>
+														</div>
+														</div>
+													</div>
+													<div class="text-edit">
+															<textarea id="froala-editor"></textarea>
+													</div>
+												</div>
+												<div class="text-editor top-border">
+													<div class="col-md-12  col-sm-12 col-xs-12">
+														<div class="row">
+														<div class="editor-header col-md-6 col-sm-12 col-xs-12">
+															<h4>Messages most frequently selected as motivating or important</h4>
+															<ul class="list-unstyled">
+																<li>
+																	<svg xmlns="http://www.w3.org/2000/svg" width="18.228" height="18.139" viewBox="0 0 18.228 18.139">
+																	  <g id="pencil-edit-button" transform="translate(-0.001 -1.289)">
+																		<path id="Path_4623" data-name="Path 4623" d="M11.335,4.316l3.708,3.708L5.657,17.41,1.951,13.7Zm6.522-.894L16.2,1.768a1.641,1.641,0,0,0-2.318,0L12.3,3.352,16.009,7.06l1.848-1.848A1.264,1.264,0,0,0,17.857,3.422ZM.011,18.914a.422.422,0,0,0,.51.5l4.132-1L.947,14.706Z" transform="translate(0)" fill="#205081"/>
+																	  </g>
+																	</svg>
+																</li>
+															</ul>
+														</div>
+														<div class="right-editor col-md-6 col-sm-12 col-xs-12">
+															<ul class="list-unstyled list-inline">
+															<div class="border-list">
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="13.311" height="18.251" viewBox="0 0 13.311 18.251">
+																	  <g id="delete-photo" transform="translate(-121.874)">
+																		<path id="Path_4624" data-name="Path 4624" d="M176.415,245.621a.405.405,0,0,0,.405.405h10.29a.405.405,0,0,0,.405-.405V232.487h-11.1v13.134Zm7.83-10.9h1.52v8.837h-1.52Zm-3.04,0h1.52v8.837h-1.52Zm-3.04,0h1.52v8.837h-1.52Z" transform="translate(-53.436 -227.775)" fill="#205081"/>
+																		<path id="Path_4625" data-name="Path 4625" d="M131.946,1.863V.405A.405.405,0,0,0,131.541,0h-6.023a.405.405,0,0,0-.405.405V2.37h-2.833a.405.405,0,0,0-.405.405V3.8a.405.405,0,0,0,.405.405h12.5a.405.405,0,0,0,.405-.405V2.775a.405.405,0,0,0-.405-.405h-2.833V1.863Zm-1.52.423h-3.793V1.52h3.793v.766Z" fill="#205081"/>
+																	  </g>
+																	</svg>
+																</a></li>
+																
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,10.53a.883.883,0,0,1,1.261,0,.905.905,0,0,1,0,1.261L9.96,17.075a.914.914,0,0,1-1.286,0L3.391,11.791A.892.892,0,0,1,4.651,10.53l3.771,3.783V.883A.887.887,0,0,1,9.317,0,.877.877,0,0,1,10.2.883v13.43Z" transform="translate(-3.126)" fill="#205081"></path> -->
+																</svg> 
+																</a></li>
+																
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="12.373" height="17.34" viewBox="0 0 12.373 17.34">
+																  <path id="download-arrow" d="M13.983,6.809a.883.883,0,0,0,1.261,0,.905.905,0,0,0,0-1.261L9.96.265a.914.914,0,0,0-1.286,0L3.391,5.549A.892.892,0,0,0,4.651,6.809L8.422,3.026V16.457a.887.887,0,0,0,.895.883.877.877,0,0,0,.883-.883V3.027Z" transform="translate(-3.126)" fill="#205081"></path>
+																</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="19.527" height="19.523" viewBox="0 0 19.527 19.523">
+																  <g id="settings-gears" transform="translate(-0.001 -4.737)">
+																	<path id="Path_4631" data-name="Path 4631" d="M2.164,16.64a8.021,8.021,0,0,0,.717,1.7l-.866,1.092a.9.9,0,0,0,.067,1.188l1.491,1.491a.892.892,0,0,0,1.188.067l1.085-.859a7.883,7.883,0,0,0,1.771.749l.163,1.4a.894.894,0,0,0,.887.792h2.11a.894.894,0,0,0,.887-.792l.156-1.347a7.974,7.974,0,0,0,1.9-.767l1.05.831a.9.9,0,0,0,1.188-.067l1.491-1.491a.892.892,0,0,0,.067-1.188L16.7,18.4a7.789,7.789,0,0,0,.781-1.866l1.258-.145a.894.894,0,0,0,.792-.887V13.4a.894.894,0,0,0-.792-.887L17.5,12.364a7.839,7.839,0,0,0-.749-1.845l.763-.965a.9.9,0,0,0-.067-1.188L15.955,6.879a.892.892,0,0,0-1.188-.067l-.937.742a7.866,7.866,0,0,0-1.94-.813l-.141-1.212a.894.894,0,0,0-.887-.792H8.752a.894.894,0,0,0-.887.792L7.723,6.741a7.833,7.833,0,0,0-1.99.841l-.972-.77a.9.9,0,0,0-1.188.067L2.083,8.37a.892.892,0,0,0-.067,1.188l.813,1.028a7.688,7.688,0,0,0-.735,1.863l-1.3.148A.894.894,0,0,0,0,13.484v2.11a.894.894,0,0,0,.792.887Zm7.645-5.708A3.488,3.488,0,1,1,6.32,14.421,3.493,3.493,0,0,1,9.809,10.933Z" fill="#205081"/>
+																  </g>
+																</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg id="expand" xmlns="http://www.w3.org/2000/svg" width="19.523" height="19.523" viewBox="0 0 19.523 19.523">
+																	  <path id="Path_4632" data-name="Path 4632" d="M259.173,0l2.44,2.44-3.835,3.835,2.092,2.092L263.7,4.532l2.44,2.44V0Z" transform="translate(-246.622)" fill="#205081"/>
+																	  <path id="Path_4633" data-name="Path 4633" d="M6.275,257.778,2.44,261.613,0,259.173v6.973H6.973l-2.44-2.44,3.835-3.835Z" transform="translate(0 -246.622)" fill="#205081"/>
+																	  <path id="Path_4634" data-name="Path 4634" d="M259.87,257.778l-2.092,2.092,3.835,3.835-2.44,2.44h6.973v-6.973l-2.44,2.44Z" transform="translate(-246.622 -246.622)" fill="#205081"/>
+																	  <path id="Path_4635" data-name="Path 4635" d="M6.973,0H0V6.973l2.44-2.44L6.275,8.367,8.367,6.275,4.532,2.44Z" fill="#205081"/>
+																	</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="22.681" height="15.121" viewBox="0 0 22.681 15.121">
+  <g id="filter-results-button" transform="translate(0 -76.5)">
+    <g id="filter" transform="translate(0 76.5)">
+      <path id="Path_4629" data-name="Path 4629" d="M8.82,91.621h5.04V89.1H8.82ZM0,76.5v2.52H22.681V76.5Zm3.78,8.82H18.9V82.8H3.78Z" transform="translate(0 -76.5)" fill="#205081"/>
+    </g>
+  </g>
+</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg id="Group_5716" data-name="Group 5716" xmlns="http://www.w3.org/2000/svg" width="27.327" height="31.794" viewBox="0 0 27.327 31.794">
+  <g id="file" transform="translate(0 0)">
+    <path id="Path_4627" data-name="Path 4627" d="M96.666,24.647H88.435A1.536,1.536,0,0,1,86.9,23.112V1.535A1.536,1.536,0,0,1,88.435,0H99.4V.508a1.492,1.492,0,0,0-.009.163V4.876a2.164,2.164,0,0,0,2.162,2.162h4.206c.044,0,.09,0,.134-.006h.534V23.112a1.536,1.536,0,0,1-1.535,1.535H96.666Z" transform="translate(-86.9)"/>
+    <path id="Path_4628" data-name="Path 4628" d="M93.04,6.944H88.823a1.288,1.288,0,0,1-1.277-1.277V1.447A.646.646,0,0,1,88.2.8a.629.629,0,0,1,.453.192l4.85,4.85A.646.646,0,0,1,93.04,6.944Z" transform="translate(-74.178 -0.777)"/>
+  </g>
+  <text id="PNG" transform="translate(0.88 15.435)" fill="#fff" font-size="10" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">PNG</tspan></text>
+  <g id="Group_5713" data-name="Group 5713" transform="translate(17.401 18.941)">
+    <g id="into-inbox-symbol" transform="translate(0)">
+      <path id="Path_4630" data-name="Path 4630" d="M14.194,24.537a.248.248,0,0,1,0,.3L9.479,30.97a.25.25,0,0,1-.4,0L4.37,24.84a.25.25,0,0,1,.291-.385l3.12,1.232V18.464a.25.25,0,0,1,.25-.25h2.5a.25.25,0,0,1,.25.25v7.224l3.12-1.232A.249.249,0,0,1,14.194,24.537Z" transform="translate(-4.318 -18.214)"/>
+    </g>
+  </g>
+</svg>
+																</a></li>
+																<li><a href="#">
+																	<svg id="Group_5716" data-name="Group 5716" xmlns="http://www.w3.org/2000/svg" width="27.327" height="31.794" viewBox="0 0 27.327 31.794">
+  <g id="file" transform="translate(0 0)">
+    <path id="Path_4627" data-name="Path 4627" d="M96.666,24.647H88.435A1.536,1.536,0,0,1,86.9,23.112V1.535A1.536,1.536,0,0,1,88.435,0H99.4V.508a1.492,1.492,0,0,0-.009.163V4.876a2.164,2.164,0,0,0,2.162,2.162h4.206c.044,0,.09,0,.134-.006h.534V23.112a1.536,1.536,0,0,1-1.535,1.535H96.666Z" transform="translate(-86.9)"/>
+    <path id="Path_4628" data-name="Path 4628" d="M93.04,6.944H88.823a1.288,1.288,0,0,1-1.277-1.277V1.447A.646.646,0,0,1,88.2.8a.629.629,0,0,1,.453.192l4.85,4.85A.646.646,0,0,1,93.04,6.944Z" transform="translate(-74.178 -0.777)"/>
+  </g>
+  <text id="XLS" transform="translate(1.88 15.435)" fill="#fff" font-size="10" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">XLS</tspan></text>
+  <g id="Group_5713" data-name="Group 5713" transform="translate(17.401 18.941)">
+    <g id="into-inbox-symbol" transform="translate(0)">
+      <path id="Path_4630" data-name="Path 4630" d="M14.194,24.537a.248.248,0,0,1,0,.3L9.479,30.97a.25.25,0,0,1-.4,0L4.37,24.84a.25.25,0,0,1,.291-.385l3.12,1.232V18.464a.25.25,0,0,1,.25-.25h2.5a.25.25,0,0,1,.25.25v7.224l3.12-1.232A.249.249,0,0,1,14.194,24.537Z" transform="translate(-4.318 -18.214)"/>
+    </g>
+  </g>
+</svg>
+																</a></li>
+															</div>
+															</ul>
+														</div>
+														</div>
+													</div>
+													<div class="text-edit">
+															<textarea id="froala-editor"></textarea>
+													</div>
+												</div>
+												<a href="#" class="more">Show More</a>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</section>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/easy-responsive-tabs.js"></script>
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script>
+	<script>
+	  $(document).ready(function() {
+		var nice = $(".task-table, .dwnld-rprts , .bg-section").niceScroll();  // The document page (body) 
+	  });
+	</script>
+	
+  </body>
+	 
+
+
+</html>
+<script>
+  
+	$('a.show-menu').click(function(){
+	if ( $(window).width() < 768 ) {
+		$('aside').slideToggle(700);
+		}
+	});
+</script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>    
+
+<script>
+  new FroalaEditor('textarea#froala-editor')
+</script>    
+
+
+<script>
+$(document).ready(function(){
+	$('.menu-display').click(function(){
+	$('.inner-tabing ul').toggle();
+	$('.inner-tabing ul li').click(function(){
+		$('.inner-tabing ul').hide();
+	});
+	});
+
+});
+</script> 
+<script>
+$(".menu-display").click(function(){
+  $but = $("#togglebut");
+  $but.html($but.html() == "+" ? "-" : "+");
+});
+</script>          
