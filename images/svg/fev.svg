@@ -1,8 +1,0 @@
-<svg id="Component_18_1" data-name="Component 18 – 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <rect id="Rectangle_1474" data-name="Rectangle 1474" width="24" height="24" fill="none"/>
-  <g id="favorite-heart-button" transform="translate(3 -16.4)">
-    <g id="favorite" transform="translate(0 20.4)">
-      <path id="Path_4562" data-name="Path 4562" d="M8.922,36.817,7.673,35.568C3.034,31.464,0,28.7,0,25.307A4.838,4.838,0,0,1,4.907,20.4a5.362,5.362,0,0,1,4.015,1.874A5.362,5.362,0,0,1,12.937,20.4a4.838,4.838,0,0,1,4.907,4.907c0,3.39-3.034,6.156-7.673,10.261Z" transform="translate(0 -20.4)" fill="none" stroke="#205081" stroke-width="1"/>
-    </g>
-  </g>
-</svg>
